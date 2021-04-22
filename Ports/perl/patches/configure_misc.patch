@@ -1,0 +1,13 @@
+diff --git a/cnf/configure_misc.sh b/cnf/configure_misc.sh
+index f18e41b..2fc2b3e 100644
+--- a/cnf/configure_misc.sh
++++ b/cnf/configure_misc.sh
+@@ -109,7 +109,7 @@ define spitshell 'cat'
+ define d_Gconvert 'sprintf((b),"%.*g",(n),(x))'
+ define d_modfl_pow32_bug 'undef'
+ define direntrytype 'struct dirent'
+-define drand01 'drand48()'
++define drand01 'random()'
+ define fflushNULL 'define'
+ define fflushall 'undef'
+ define freetype 'void'

@@ -1,0 +1,13 @@
+diff --git a/cnf/configure_func.sh b/cnf/configure_func.sh
+index e2515bf..543631d 100644
+--- a/cnf/configure_func.sh
++++ b/cnf/configure_func.sh
+@@ -53,7 +53,7 @@ checkfunc d_dirfd 'dirfd'
+ checkfunc d_dladdr 'dladdr' 'NULL, NULL' 'dlfcn.h'
+ checkfunc d_dlerror 'dlerror'
+ checkfunc d_dlopen 'dlopen'
+-checkfunc d_drand48 'drand48'
++# checkfunc d_drand48 'drand48'
+ checkfunc d_dup2 'dup2' "0,0" 'unistd.h'
+ checkfunc d_dup3 'dup3' "0,0,0" 'fcntl.h unistd.h'
+ checkfunc d_duplocale 'duplocale' '0' 'locale.h'

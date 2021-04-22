@@ -1,0 +1,15 @@
+diff --git a/ext/POSIX/POSIX.xs b/ext/POSIX/POSIX.xs
+index 77bb829..3de1295 100644
+--- a/ext/POSIX/POSIX.xs
++++ b/ext/POSIX/POSIX.xs
+@@ -3821,9 +3821,7 @@ ctermid(s = 0)
+ 	char *          s = 0;
+     CODE:
+ #ifdef I_TERMIOS
+-        /* On some systems L_ctermid is a #define; but not all; this code works
+-         * for all cases (so far...) */
+-	s = (char *) safemalloc((size_t) L_ctermid);
++	s = (char *) safemalloc((size_t) 9);
+ #endif
+ 	RETVAL = ctermid(s);
+     OUTPUT:

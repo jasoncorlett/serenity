@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index c5253a0..9b0782c 100644
+--- a/Makefile
++++ b/Makefile
+@@ -298,7 +298,7 @@ dist/Unicode-Normalize/Makefile: lib/unicore/CombiningClass.pl
+ pod/perluniprops.pod: lib/unicore/CombiningClass.pl
+ 
+ lib/unicore/CombiningClass.pl: $(CONFIGPM)
+-	./miniperl_top lib/unicore/mktables -w -C lib/unicore -P pod -maketest -makelist -p
++	./miniperl_top lib/unicore/mktables -w -C lib/unicore -P pod -makelist -p
+ 
+ # The following rules ensure that modules listed in mkppport.lst get
+ # their ppport.h installed.
